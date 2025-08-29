@@ -36,7 +36,7 @@ const teamMembers = [
   // },
 ];
 const BirthdayStory = () => {
-  const [currentScene, setCurrentScene] = useState(1);
+  const [currentScene, setCurrentScene] = useState(0);
   const [knocksShown, setKnocksShown] = useState(0);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -295,8 +295,8 @@ const BirthdayStory = () => {
         {/* Scene 3: Name Revelation */}
         {currentScene === 3 && (
           <RandomCharacterReveal
-            text="ARISTIDE"
-            finalText="C'est l'anniversaire d'Aristide !"
+            text="SABINE"
+            finalText="C'est l'anniversaire de Sabine !"
             onComplete={() => setCurrentScene(4)}
             duration={5000}
           />
@@ -307,7 +307,7 @@ const BirthdayStory = () => {
           <div className="text-center space-y-8 relative z-20">
             <div className="animate-scale-in">
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold bg-blue-500 bg-clip-text text-transparent mb-8 text-center">
-                🎉 C'est l'anniversaire d'Aristide !! 🎉
+                🎉 C'est l'anniversaire de Sabine !! 🎉
               </h2>
             </div>
           </div>
@@ -344,7 +344,7 @@ const BirthdayStory = () => {
             </div>
 
             <h3 className="text-4xl font-bold bg-blue-500 bg-clip-text text-transparent">
-              Happy Birthday, Aristide !
+              Happy Birthday, Sabine !
             </h3>
 
             <Button
